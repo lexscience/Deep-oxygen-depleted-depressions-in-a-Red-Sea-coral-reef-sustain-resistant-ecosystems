@@ -1,4 +1,4 @@
-# Changing environmental gradients moderate microbial communities in unique features of the southern Red Sea
+#A multidisciplinary exploration of deep lagoons embedded within a complex coral reef system: A case study of the Farasan banks, southern Red Sea
 
 > abstract of publication
 > link to publication
@@ -6,12 +6,9 @@
 ## Table of Contents
 * [General Info](#general-information)
 * [Sampling Overview](#sampling-overview)
-* [Water chemistry data](#water-chem-data)
-* [Raw sequence processing](#rawread-proc)
-* [Data cleanup and wrangling](#data-cleanup-and-wrangling)
-* [Statistical analysis](#stats)
-* [Graphs](#graphs)
-* [Acknowledgements](#acknowledgements)
+* [Water chemistry data processing](#water-chem-data)
+* [Sequence data processing](#rawread-proc)
+* [Data analysis](#stats)
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
