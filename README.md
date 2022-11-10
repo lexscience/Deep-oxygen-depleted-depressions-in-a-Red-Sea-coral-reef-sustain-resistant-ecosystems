@@ -4,7 +4,6 @@
 > link to publication
 
 ## Table of Contents
-* [General Info](#general-information)
 * [Sampling Overview](#sampling-overview)
 * [Water chemistry data processing](#water-chem-data)
 * [Sequence data processing](#rawread-proc)
@@ -21,37 +20,22 @@
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
-## Water chemistry data
+## Water chemistry data processing
 - TA
 - oxygen
 - whatever
 
 
-## Raw sequence processing
+## Sequence data processing
 - awesome 1
 - awesome 2
 - awesome 3
 
 
 
-## Data cleanup and wrangling
+## Data analysis
 - what we used bla bla 
 - 
-
-
-## Statistical analysis
-- name all analsysis and the formatting of the table
-
-
-## Graphs
-
-`write-your-code-here`
-
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- Many thanks to...
 
 
 ## Contact
