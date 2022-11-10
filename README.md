@@ -1,4 +1,4 @@
-#A multidisciplinary exploration of deep lagoons embedded within a complex coral reef system: A case study of the Farasan banks, southern Red Sea
+# A multidisciplinary exploration of deep lagoons embedded within a complex coral reef system: A case study of the Farasan banks, southern Red Sea
 
 > abstract of publication
 > link to publication
