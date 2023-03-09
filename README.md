@@ -39,7 +39,9 @@
 
 
 ## Contact
-Repository created by [@lexscience] - feel free to contact me. larissa-fruehe@kaust.edu.sa
+Project lead by Shannon Klein [@DrShannonKlein] - shannon.klein@kaust.edu.sa
+Repository created and curated by [@lexscience] - larissa-fruehe@kaust.edu.sa
+Feel free to contact us. 
 
 
 <!-- Optional -->
