@@ -39,8 +39,8 @@
 
 
 ## Contact
-Project lead by Shannon Klein [@DrShannonKlein] - shannon.klein@kaust.edu.sa
-Repository created and curated by [@lexscience] - larissa-fruehe@kaust.edu.sa
+Project lead by Shannon Klein [@DrShannonKlein] - shannon.klein@kaust.edu.sa . 
+Repository created and curated by [@lexscience] - larissa.fruehe@oceanx.org . 
 Feel free to contact us. 
 
 
