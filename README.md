@@ -1,7 +1,7 @@
-# A multidisciplinary exploration of deep lagoons embedded within a complex coral reef system: A case study of the Farasan banks, southern Red Sea
+# Subsurface sinkholes in the Farasan Bank directly evidence oxygen depleted zones in a coral reef domain but sustain resistant ecosystems
 
-> abstract of publication
-> link to publication
+
+## Abstract
 
 ## Table of Contents
 * [Data storage and availability](#data-avail)
@@ -19,17 +19,10 @@ Bacterial sequences can be downloaded using accession numbers SRR22244354 - SRR2
 Protist sequences can be downloaded using accession numbers SRR22244609 - SRR22244629
 Included in the uploaded bioproject are also metabarcoding reads targeting the COI amplicon, which have not been used in the published paper due to bad quality. 
 
-Supplementary files and non-sequencing data can be found the below linked DYAD repository. 
+Supplementary files and non-sequencing data can be found the below linked DRYAD repository. 
+++++LINK DRYAD++++
 
 All code used to analyse and visualise data is stored in this GitHub repository. 
-
-## Sampling Overview
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
 
 ## Water chemistry data processing
 - TA
