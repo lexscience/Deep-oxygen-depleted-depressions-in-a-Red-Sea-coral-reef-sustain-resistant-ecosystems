@@ -34,6 +34,7 @@ All code used to analyse and visualise data is stored in this GitHub repository.
 - Code for amplicon sequence variant (ASV) inference using DADA2 available in [DADA2_Inference](https://github.com/lexscience/Klein-2024/blob/main/DADA2_Inference.R)
 - Code for cleaning and removal of contaminant sequences available in [Decontam&Cleaning](https://github.com/lexscience/Klein-2024/blob/main/Decontam%26Cleaning)
 
+Clean data tables as input for data analysis can be accessed via dryad or here https://github.com/lexscience/Klein-2024/blob/main/clean_V3V4.csv for V3V4 SSU rRNA gene bacterial matrix or here https://github.com/lexscience/Klein-2024/blob/main/clean_V4.csv for V4 SSU rRNA gene protists matrix
 
 ## Data analysis
 - what we used bla bla 
