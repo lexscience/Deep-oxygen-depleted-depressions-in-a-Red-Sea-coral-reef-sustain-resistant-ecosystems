@@ -31,10 +31,8 @@ All code used to analyse and visualise data is stored in this GitHub repository.
 
 
 ## Sequence data processing
-- awesome 1
-- awesome 2
-- awesome 3
-
+- Code for amplicon sequence variant (ASV) inference using DADA2 available in DADA2_Inference
+- Code for cleaning and removal of contaminant sequences available in Decontam&Cleaning
 
 
 ## Data analysis
