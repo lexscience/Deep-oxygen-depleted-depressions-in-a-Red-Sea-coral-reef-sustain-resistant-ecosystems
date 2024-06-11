@@ -1,6 +1,3 @@
-##Decontam final version##
-
-
 #### PREVALENCE METHOD ####
 BiocManager::install("decontam")
 library(phyloseq)
@@ -29,7 +26,7 @@ ggplot(data=df.pa, aes(x=pa.neg, y=pa.pos, color=contaminant)) + geom_point() +
 contamdf.prev05_list <- contamdf.prev05 %>% filter(contaminant == "FALSE")
 noncontamASVs <- as.list(rownames(contamdf.prev05_list))
 
-asv_table <- read.csv2("unclean_COI_SOFT.csv", head=T)
+asv_table <- read.csv2("unclean_V3V4.csv", head=T)
 asv_table_clean <- asv_table %>% filter(asv %in% noncontamASVs)
 #dismiss E and C sample
 excluded_vars <- c("E1N1_0", "C1N1_0")
@@ -59,16 +56,16 @@ asv_table_clean <- asv_table_clean %>%
   filter(class != "Arachnida") %>%
   filter(phylum != "Streptophyta")
 
-write.csv(asv_table_clean, "clean_COI_SOFT.csv")
+write.csv(asv_table_clean, "clean_V3V4.csv")
 
 ## remove singletons and doubletons in Excel
 ## check unclean table for all ASVs die in blanks vorkommen -> in excel tabelle und dann nochmal manuell cleanen
 
-contams <- read.csv("V9/contams.csv", head=F)
+contams <- read.csv("V3V4/contams.csv", head=F)
 contams <- as.list(contams$V1)
 
-asv_table_clean <- read.csv("V9/clean_V9.csv", head=T)
+asv_table_clean <- read.csv("V3V4/clean_V3V4.csv", head=T)
 
 asv_table_clean <- asv_table_clean %>% filter(!asv %in% contams)
 
-write.csv(asv_table_clean, "clean_V9.csv")
+write.csv(asv_table_clean, "clean_V3V4.csv")
