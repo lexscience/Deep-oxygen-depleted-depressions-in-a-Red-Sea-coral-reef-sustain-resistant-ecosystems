@@ -1,7 +1,5 @@
-#### Script fuer alle 3 primer Blue Hole project ####
-#### Improvements & Pipelining #### input von ND ####
+#### Improvements & Pipelining #### input ND ####
 #### 09.03.2023 LF ####
-
 
 library(dada2)
 library(ShortRead)
@@ -10,7 +8,6 @@ library(ggplot2)
 library(phyloseq)
 library(plyr)
 library(beepr)
-
 
 # Set the working directory to folder where sample files (.txt) are located.
 setwd("demultiplex")
@@ -42,18 +39,6 @@ fnRs <- sort(list.files(path.demultiplex, pattern = "R2.fastq.gz", full.names = 
 #V3V4
 FWD <- "CCTACGGGNGGCWGCAG"
 REV <- "GACTACHVGGGTATCTAATCC" 
-#V4_Euk
-FWD <- "CCAGCASCYGCGGTAATTCC" 
-REV <- "ACTTTCGTTCTTGATYRATGA" 
-#CO1
-FWD <- "GGWACWGGWTGAACWGTWTAYCCYCC"  ## forward primer sequence
-REV <- "TANACYTCNGGRTGNCCRAARAAYCA"  ## reverse primer sequence
-
-FWD <- "GGWACWGGWTGAACWGTWTAYCCYCC"  ## forward primer sequence
-REV <- "TANACYTCNGGRTGNCCRAARAAYCA"
-
-FWD <- "GGWACWRGWTGRACWNTNTAYCCYCC"
-REV <- "GTANACYTCNGGRTGNCCRAARAAYCA"
 
 #to ensure we have the right primers, and the correct orientation of the primers on the reads, we will verify the presence and orientation of these primers in the data.
 allOrients <- function(primer) {
@@ -171,7 +156,7 @@ out <- filterAndTrim(cutFs, filtFs, cutRs, filtRs, trimLeft = 5,
                      truncLen = c(210,160),  maxN = 0, maxEE = 1,
                      truncQ = 2, minLen = 50, rm.phix = TRUE, 
                      compress = TRUE)
-out <- readRDS("CO1/Track.rds")
+out <- readRDS("Track.rds")
 saveRDS(out, file.path(path,"Track.rds"))
 # Check if file names match
 
@@ -206,7 +191,7 @@ names(dadaFs) <- sample.namesR
 saveRDS(dadaRs, "dadaR.rds")
 beep()
 
-mergers <- readRDS("CO1/mergers.rds")
+mergers <- readRDS("mergers.rds")
 mergers <- mergePairs(dadaFs, filtFs, dadaRs,filtRs, 
                       minOverlap=20, maxMismatch=2, verbose=TRUE)
 saveRDS(mergers, "mergers.rds")
@@ -214,7 +199,7 @@ saveRDS(mergers, "mergers.rds")
 seqtab <- makeSequenceTable(mergers)
 dim(seqtab)
 saveRDS(seqtab, "seqtab.rds")
-seqtab <- readRDS("CO1/seqtab.rds")
+seqtab <- readRDS("seqtab.rds")
 
 #get seq length for filtering
 sl <- hist(nchar(getSequences(seqtab)), main="Distribution of sequence lengths", breaks=50)
@@ -225,11 +210,10 @@ dev.off()
 
 #V4 375-380
 #V3V4 400-430
-#CO1 312-314
 
-seqtab_filtered <- seqtab[,nchar(colnames(seqtab)) %in% seq(300,315)]
+seqtab_filtered <- seqtab[,nchar(colnames(seqtab)) %in% seq(375,380)]
 saveRDS(seqtab_filtered, "seqtab_filtered.rds")
-seqtab_filtered <- readRDS("CO1/seqtab_filtered.rds")
+seqtab_filtered <- readRDS("/seqtab_filtered.rds")
 seqtab_nochim <- removeBimeraDenovo(seqtab_filtered, method="consensus", multithread=TRUE, verbose=TRUE)
 saveRDS(seqtab_nochim, "seqtab_nochim.rds")
 
@@ -239,7 +223,7 @@ track <- cbind(out, sapply(dadaFs, getN), sapply(dadaRs, getN), sapply(mergers, 
 colnames(track) <- c("input", "filtered", "denoisedF", "denoisedR", "merged", "seqtab", "seqtab_filt", "seqtab_nochim")
 rownames(track) <- sample.namesF
 track
-write.csv(track,"SeqOV_CO1.csv")
+write.csv(track,"SeqOV.csv")
 
 # ### different tax assignments 
 
