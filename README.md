@@ -31,7 +31,7 @@ All code used to analyse and visualise data is stored in this GitHub repository.
 
 
 ## Sequence data processing
-- Code for amplicon sequence variant (ASV) inference using DADA2 available in DADA2_Inference
+- Code for amplicon sequence variant (ASV) inference using DADA2 available in [DADA2_Inference](https://github.com/lexscience/Klein-2024/blob/main/DADA2_Inference.R)
 - Code for cleaning and removal of contaminant sequences available in [Decontam&Cleaning](https://github.com/lexscience/Klein-2024/blob/main/Decontam%26Cleaning)
 
 
