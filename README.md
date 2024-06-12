@@ -25,7 +25,7 @@ Supplementary files and non-sequencing data can be found the below linked DRYAD 
 All code used to analyse and visualise data is stored in this GitHub repository. 
 
 ## Water chemistry data processing & Visual Data analysis
-- Code for Pearson correlations analysing the relationship between environmental parameters, Mann-Whitney test analysing fish swimming speeds between site 2 and the open-water reference sites can be found here LINK
+- Code for Pearson correlations analysing the relationship between environmental parameters, Mann-Whitney test analysing fish swimming speeds between site 2 and the open-water reference sites can be found here https://github.com/lexscience/Klein-2024/blob/main/Statistics_EnvParam%26Visuals.R
 - Code for CTD data processing can be found here 
 
 
