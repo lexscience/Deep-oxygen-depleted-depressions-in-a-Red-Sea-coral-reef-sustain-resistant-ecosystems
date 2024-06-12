@@ -1,0 +1,66 @@
+### NMDS Bacteria ###
+library(vegan)
+library(dplyr)
+library(tibble)
+library(ggplot2)
+library(tidyr)
+library(RColorBrewer)
+
+table <- read.csv2("clean_V3V4_deepsonly.csv", head = T, sep=",")
+env <- read.csv("samdf.csv", head=T, sep=";") %>% filter(Category == "Deep") %>% filter(Depth != "325") %>% 
+  mutate(Oxygen=c("oxygen depleted", "oxygen depleted", "oxygenated", "oxygenated",
+                  "oxygenated", "oxygen depleted", "oxygen depleted", "oxygen depleted", "oxygenated")) %>%
+  select(Sample, Depth, Oxygen, OX_WK, OX_WK, TA, DIC, pH, pCO2, Aragonite, Silica, 
+         Nitrite, Nitrate, Phosphate, OX_CTD, Site)
+
+matrix <- t(table[,2:10])
+colnames(matrix) <- table$asv
+relab_ab <-decostand(matrix,"total")
+set.seed(42)
+nmds = metaMDS(relab_ab, distance = "bray")
+nmds
+
+ordiplot(nmds, display="species")
+ordiplot(nmds, display="sites")
+
+ordiplot(nmds, type="n", xlim=c(-1.7, 1.7), ylim=c(-1.5,1.5))
+#nmds_df <- as.data.frame(nmds)
+
+points(nmds, display="sites", select=c("D1N1_419"), pch=19, col="#6C6ECF", cex=1.5)
+points(nmds, display="sites", select=c("D1N2_125"), pch=19, col="#8C6D31", cex=1.5)
+points(nmds, display="sites", select=c("D1N3_90"), pch=19, col="#E7BA51", cex=1.5)
+points(nmds, display="sites", select=c("D1N4_45"), pch=19, col="#D5616B", cex=1.5)
+
+points(nmds, display="sites", select=c("D2N1_40"), pch=17, col="#7B4172", cex=1.5)
+points(nmds, display="sites", select=c("D2N2_125"), pch=17, col="#8C6D31", cex=1.5)
+points(nmds, display="sites", select=c("D2N3_200"), pch=17, col="#8CA152", cex=1.5)
+points(nmds, display="sites", select=c("D2N4_620"), pch=17, col="#383B79", cex=1.5)
+points(nmds, display="sites", select=c("D2N5_5"), pch=17, col="#DE9DD6", cex=1.5)
+
+
+legend(x=2, y=1, c("491 m","125 m", "90 m", "45 m", "40 m", "200 m", "620 m", "3 m"),
+       cex=1,
+       col=c("#6C6ECF", "#8C6D31", "#E7BA51", "#D5616B","#7B4172", "#8CA152", "#383B79", "#DE9DD6"),pch=16)
+
+
+
+OTUs_oxy <- colnames(matrix[,which(colSums(matrix[c(1,2,6:8),])==0)])
+OTUs_deoxy <- colnames(matrix[,which(colSums(matrix[c(1,3:5,9),])==0)])
+non_endemic_OTUs <- colnames(matrix[,which(! colnames(matrix) %in% c(OTUs_deoxy, OTUs_oxy))]) 
+
+
+# To plot the endemic OTUs, we proceed just as before. But this time we display 'species' instead of 'sites'.
+ordiplot(nmds, type="n")
+points(nmds, display="species", pch=1, col="grey", cex=1)
+points(nmds, display="species", select=OTUs_oxy, pch=1, col="navy", cex=1)
+points(nmds, display="species", select=OTUs_deoxy, pch=1, col="goldenrod", cex=1)
+
+svg("NMDS.svg")
+dev.off()
+
+write.csv(OTUs_oxy, "BAC_endemicASVs_oxy.csv")
+write.csv(OTUs_deoxy, "BAC_endemicASVs_deoxy.csv")
+
+
+# In case we want to visualize the non-endemic OTUs, too, we simply add
+points(nmds, display="species", select=non_endemic_OTUs, pch=1, col="grey", cex=1) 
