@@ -1,4 +1,4 @@
-### NMDS Bacteria ###
+### NMDS ###
 library(vegan)
 library(dplyr)
 library(tibble)
@@ -42,12 +42,9 @@ legend(x=2, y=1, c("491 m","125 m", "90 m", "45 m", "40 m", "200 m", "620 m", "3
        cex=1,
        col=c("#6C6ECF", "#8C6D31", "#E7BA51", "#D5616B","#7B4172", "#8CA152", "#383B79", "#DE9DD6"),pch=16)
 
-
-
 OTUs_oxy <- colnames(matrix[,which(colSums(matrix[c(1,2,6:8),])==0)])
 OTUs_deoxy <- colnames(matrix[,which(colSums(matrix[c(1,3:5,9),])==0)])
 non_endemic_OTUs <- colnames(matrix[,which(! colnames(matrix) %in% c(OTUs_deoxy, OTUs_oxy))]) 
-
 
 # To plot the endemic OTUs, we proceed just as before. But this time we display 'species' instead of 'sites'.
 ordiplot(nmds, type="n")
@@ -60,7 +57,6 @@ dev.off()
 
 write.csv(OTUs_oxy, "BAC_endemicASVs_oxy.csv")
 write.csv(OTUs_deoxy, "BAC_endemicASVs_deoxy.csv")
-
 
 # In case we want to visualize the non-endemic OTUs, too, we simply add
 points(nmds, display="species", select=non_endemic_OTUs, pch=1, col="grey", cex=1) 
