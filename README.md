@@ -35,7 +35,7 @@ All code used to analyse and visualise data is stored in this GitHub repository.
 Clean data tables as input for data analysis can be accessed via dryad or here https://github.com/lexscience/Klein-2024/blob/main/clean_V3V4.csv for V3V4 SSU rRNA gene bacterial matrix or here https://github.com/lexscience/Klein-2024/blob/main/clean_V4.csv for V4 SSU rRNA gene protists matrix
 
 ## Data analysis
-- Code to produce Figure 3 - Non-metrical multidimensional scaling (NMDS) and relative abundance taxonomy charts [Taxonomy}(https://github.com/lexscience/Klein-2024/blob/main/Taxonomy) for eDNA metabarcoding datasets is deposited. The accompanying environmental data used for eDNA data anlysis is available here 
+- Code to produce Figure 3 - Non-metrical multidimensional scaling (NMDS) and relative abundance taxonomy charts [Taxonomy}(https://github.com/lexscience/Klein-2024/blob/main/Taxonomy) for eDNA metabarcoding datasets is deposited. The accompanying environmental data used for eDNA data anlysis is available here https://github.com/lexscience/Klein-2024/blob/main/samdf.csv
 
 ## Contact
 Project lead by Shannon Klein [@DrShannonKlein] - shannon.klein@kaust.edu.sa . 
