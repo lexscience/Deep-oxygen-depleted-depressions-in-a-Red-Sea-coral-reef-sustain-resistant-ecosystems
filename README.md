@@ -1,7 +1,15 @@
-# Subsurface sinkholes in the Farasan Bank directly evidence oxygen depleted zones in a coral reef domain but sustain resistant ecosystems
+# Deep depressions in the coastal Red Sea directly evidence oxygen depleted zones in a coral reef domain but sustain resistant ecosystems
 
 
 ## Abstract
+
+Persistent oxygen-depleted zones are known primarily from enclosed basins in temperate regions or the open-ocean (including oxygen minimum and limiting zones). However, little is known about the potential for such zones in tropical coastal domains, even though warmer temperatures and complex geomorphological structures in some domains increase their likelihood. Here, we show two subsurface oxygen-depleted zones within deep depressions of the Red Sea’s Difaht Farasan—a carbonate platform hosting the world’s third-largest contiguous tropical coral reef system3. One zone maintains suboxic oxygen levels (~11-14 µmol kg⁻¹), while the other sustains oxygen levels below detection (<2 µmol kg⁻¹). The suboxic zone shows no fixed nitrogen loss, while the near-anoxic zone hosts anaerobic microbial populations and shows signs of nitrogen loss. We propose that the Red Sea’s warm and saline environment interacts with the semi-enclosed depressions to restrict vertical mixing, limiting oxygen resupply at depth. Yet, unlike most other oxygen-depleted zones, these zones support resistant aerobic respiring taxa, indicating an unusual capacity to reduce aerobic oxygen demands at high temperatures (>22°C). Targeted exploration of deep tropical coastal environments is crucial to determine if similar zones and the resistant taxa they sustain exist beyond the Difaht Farasan and their potential responses to climate change.
+
+## Publication
+<insert link to publication>
+
+## Authors
+Shannon G. Klein, Larissa Frühe, Anieka J. Parry, Fabio Marchese, Megan K. B. Nolan, Elisa Laiolo, Kah Kheng Lim, Alexandra Steckbauer, Jessica Breavington, Christopher A. Hempel, Kate von Krusenstiern, Froukje M. van der Zwan, Eleonora Re, Taiba Alamoudi, Jacqueline V. Alva Garcia, Silvia Arossa, Carlos Angulo-Preckler, Mattie Rodrigue, Vincent A. Pieribone, Mohammad A. Qurban, Francesca Benzoni, and Carlos M. Duarte1.
 
 ## Table of Contents
 * [Data storage and availability](#data-avail)
@@ -20,7 +28,7 @@ Protist sequences can be downloaded using accession numbers SRR22244609 - SRR222
 Included in the uploaded bioproject are also metabarcoding reads targeting the COI amplicon, which have not been used in the published paper due to bad quality. 
 
 Supplementary files and non-sequencing data can be found the below linked DRYAD repository. 
-++++LINK DRYAD++++
+https://datadryad.org/stash/share/ndIWIGf28mmJ-nUc5HqPEuqPQggpeTYRjIDaMt5imEQ
 
 All code used to analyse and visualise data is stored in this GitHub repository. 
 
