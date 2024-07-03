@@ -9,7 +9,7 @@ Persistent oxygen-depleted zones are known primarily from enclosed basins in tem
 <insert link to publication>
 
 ## Authors
-Shannon G. Klein, Larissa Frühe, Anieka J. Parry, Fabio Marchese, Megan K. B. Nolan, Elisa Laiolo, Kah Kheng Lim, Alexandra Steckbauer, Jessica Breavington, Christopher A. Hempel, Kate von Krusenstiern, Froukje M. van der Zwan, Eleonora Re, Taiba Alamoudi, Jacqueline V. Alva Garcia, Silvia Arossa, Carlos Angulo-Preckler, Mattie Rodrigue, Vincent A. Pieribone, Mohammad A. Qurban, Francesca Benzoni, and Carlos M. Duarte1.
+Shannon G. Klein, Larissa Frühe, Anieka J. Parry, Fabio Marchese, Megan K. B. Nolan, Elisa Laiolo, Kah Kheng Lim, Alexandra Steckbauer, Jessica Breavington, Christopher A. Hempel, Kate von Krusenstiern, Froukje M. van der Zwan, Eleonora Re, Taiba Alamoudi, Jacqueline V. Alva Garcia, Silvia Arossa, Carlos Angulo-Preckler, Mattie Rodrigue, Vincent A. Pieribone, Mohammad A. Qurban, Francesca Benzoni, and Carlos M. Duarte.
 
 ## Table of Contents
 * [Data storage and availability](#data-avail)
