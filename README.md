@@ -1,4 +1,4 @@
-# Deep depressions in the coastal Red Sea directly evidence oxygen depleted zones in a coral reef domain but sustain resistant ecosystems
+# Deep oxygen-depleted Red Sea coral reef depressions sustain resistant ecosystems
 
 
 ## Abstract
