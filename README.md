@@ -34,7 +34,7 @@ All code used to analyse and visualise data is stored in this GitHub repository.
 
 ## Water chemistry data processing & Visual Data analysis
 - Code for Pearson correlations analysing the relationship between environmental parameters, Mann-Whitney test analysing fish swimming speeds between site 2 and the open-water reference sites can be found here [Statistics_EnvParam&Visuals](https://github.com/lexscience/Klein-2024/blob/main/Statistics_EnvParam%26Visuals.R)
-- Code for CTD data processing can be found here 
+- Code for CTD data processing can be found here [CTD_data_processing](https://github.com/steckbauera/SteckbauerKlein2024_CTD) 
 
 ## Sequence data processing
 - Code for amplicon sequence variant (ASV) inference using DADA2 available in [DADA2_Inference](https://github.com/lexscience/Klein-2024/blob/main/DADA2_Inference.R)
